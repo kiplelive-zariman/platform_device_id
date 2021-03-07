@@ -18,7 +18,7 @@ void main() {
   });
 
   test('Get Device ID ', () async {
-    String deviceID = await PlatformDeviceId.getDeviceId;
+    String? deviceID = await PlatformDeviceId.getDeviceId;
     expect(deviceID, '42');
   });
 }
